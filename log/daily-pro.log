@@ -1,0 +1,234 @@
+2020-03-16 14:11:31.489  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 5632 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:11:31.490  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:11:42.992  WARN 5632 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:11:44.436  WARN 5632 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:11:44.757  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Started DailyApplication in 13.761 seconds (JVM running for 14540.507)
+2020-03-16 14:11:46.216  INFO 9716 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 9716 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:11:46.231  INFO 9716 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:12:03.914  WARN 9716 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:12:04.290  WARN 9716 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:12:04.372  WARN 9716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-16 14:12:04.424 ERROR 9716 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2020-03-16 14:13:19.441  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 5632 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:13:19.442  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:13:20.320  INFO 724 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 724 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:13:20.335  INFO 724 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:13:21.061  WARN 5632 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:13:21.316  WARN 5632 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:13:21.506  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Started DailyApplication in 2.176 seconds (JVM running for 14637.257)
+2020-03-16 14:13:35.272  WARN 724 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:13:37.145  WARN 724 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:13:38.543  WARN 724 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-16 14:13:40.031 ERROR 724 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8888 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8888 or configure this application to listen on another port.
+
+2020-03-16 14:14:34.526  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 5632 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:14:34.526  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:14:35.691  WARN 5632 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:14:35.837  WARN 5632 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:14:35.946  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Started DailyApplication in 1.467 seconds (JVM running for 14711.697)
+2020-03-16 14:14:41.232  INFO 9428 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 9428 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:14:41.249  INFO 9428 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:14:46.029  WARN 9428 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:14:46.405  WARN 9428 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:14:46.497  WARN 9428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-16 14:14:46.548 ERROR 9428 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2020-03-16 14:16:57.478  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 5632 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:16:57.479  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:16:58.598  WARN 5632 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:16:58.804  WARN 5632 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:16:58.979  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Started DailyApplication in 1.546 seconds (JVM running for 14854.729)
+2020-03-16 14:16:59.257  INFO 3532 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 3532 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:16:59.261  INFO 3532 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:17:04.819  WARN 3532 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:17:05.121  WARN 3532 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:17:05.207  WARN 3532 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-16 14:17:05.256 ERROR 3532 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+2020-03-16 14:18:08.721  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 5632 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:18:08.722  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:18:09.524  WARN 5632 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:18:09.619  WARN 5632 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:18:09.768  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Started DailyApplication in 1.122 seconds (JVM running for 14925.518)
+2020-03-16 14:18:20.924  INFO 9288 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 9288 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:18:20.928  INFO 9288 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:18:25.839  WARN 9288 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:18:26.208  WARN 9288 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:18:26.313  WARN 9288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-16 14:18:26.376 ERROR 9288 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2020-03-16 14:19:05.887  INFO 6112 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 6112 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:19:05.891  INFO 6112 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:19:09.698  WARN 6112 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:19:10.040  WARN 6112 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:19:10.164  WARN 6112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-16 14:19:10.223 ERROR 6112 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2020-03-16 14:19:21.344  INFO 11224 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 11224 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:19:21.350  INFO 11224 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:19:26.488  WARN 11224 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:19:26.857  WARN 11224 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:19:26.953  WARN 11224 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-16 14:19:27.015 ERROR 11224 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2020-03-16 14:24:07.318  INFO 9112 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 9112 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:24:07.335  INFO 9112 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:24:14.252  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 5632 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:24:14.252  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:24:19.038  WARN 5632 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:24:19.418  WARN 5632 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:24:19.866  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Started DailyApplication in 5.931 seconds (JVM running for 15295.617)
+2020-03-16 14:24:20.433  WARN 9112 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:24:21.006  WARN 9112 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:24:21.297  WARN 9112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-16 14:24:21.389 ERROR 9112 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2020-03-16 14:24:34.615  INFO 6492 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 6492 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:24:34.620  INFO 6492 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:24:38.940  WARN 6492 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:24:39.340  WARN 6492 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:24:39.460  WARN 6492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-16 14:24:39.532 ERROR 6492 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2020-03-16 14:39:41.885  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 5632 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:39:41.917  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:39:43.564  WARN 5632 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:39:43.669  WARN 5632 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:39:43.703  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Started DailyApplication in 1.924 seconds (JVM running for 16219.454)
+2020-03-16 14:39:59.560  INFO 10428 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 10428 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:39:59.580  INFO 10428 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:40:23.295  WARN 10428 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:40:23.729  WARN 10428 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-16 14:40:23.814  WARN 10428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-16 14:40:23.876 ERROR 10428 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2020-03-16 14:47:41.654  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 5632 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:47:41.655  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:47:43.672  WARN 5632 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:47:44.124  INFO 5632 --- [restartedMain] com.lh.daily.DailyApplication            : Started DailyApplication in 2.558 seconds (JVM running for 16699.874)
+2020-03-16 14:47:59.112  INFO 11232 --- [restartedMain] com.lh.daily.DailyApplication            : Starting DailyApplication on DESKTOP-J20KCMG with PID 11232 (E:\webstorm\idea\daily\target\classes started by 23949 in E:\webstorm\idea\daily)
+2020-03-16 14:47:59.143  INFO 11232 --- [restartedMain] com.lh.daily.DailyApplication            : The following profiles are active: pro
+2020-03-16 14:48:19.051  WARN 11232 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:48:20.008  WARN 11232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-16 14:48:20.736  INFO 11232 --- [restartedMain] com.lh.daily.DailyApplication            : Started DailyApplication in 35.9 seconds (JVM running for 37.673)

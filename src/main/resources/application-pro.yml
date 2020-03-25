@@ -1,0 +1,18 @@
+#生产环境
+spring:
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/daily?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=UTC
+      username: root
+      password: root
+    jpa:
+      hibernate:
+        ddl-auto: none
+      show-sql: true
+logging:
+  level:
+    root: warn
+    com.lh: info
+  file: log/daily-pro.log
+server:
+  port: 8081
