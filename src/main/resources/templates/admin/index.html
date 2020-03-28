@@ -39,8 +39,9 @@
 <div class="m-container-small m-padded-tb-big">
     <div class="ui container">
         <div class="ui success large message">
-            <h3>Hi,</h3>
-            <p>李，欢迎登录！</p>
+            <h3 style="display:inline;">Hi,</h3>
+            <span th:text="${session.user.nickname}">yuMoyu</span>
+            <p>欢迎登录！</p>
         </div>
         <img src="https://picsum.photos/1000/400/?blur" alt="" class="ui rounded bordered fluid image">
     </div>

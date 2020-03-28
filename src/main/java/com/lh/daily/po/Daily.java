@@ -10,8 +10,10 @@ public class Daily {
 
     @Id //主键
     @GeneratedValue //生成策略：自增长
-    private long id;//标题
-
+    private Long id;
+    private String title; //标题
+    @Basic(fetch = FetchType.LAZY)  //使用的时候才会加载
+    @Lob //long text类型
     private String content;//博客内容
     private String firstPicture;//首图，64位图片编码
     private String flag;//标记 转载？原创..
@@ -37,17 +39,30 @@ public class Daily {
 
     @OneToMany(mappedBy = "daily")
     private List<Comment> comments = new ArrayList<>();
+
+    @Transient  //正常属性值 不和数据库映射
+    private String tagIds;
+
+    private String description; //博客描述
+
     public Daily() {
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
     public String getContent() {
         return content;
     }
@@ -168,10 +183,47 @@ public class Daily {
         this.comments = comments;
     }
 
+    public String getTagIds() {
+        return tagIds;
+    }
+
+    public void setTagIds(String tagIds) {
+        this.tagIds = tagIds;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void init() {
+        this.tagIds = tagsToIds(this.getTags());
+    }
+    private String tagsToIds(List<Tag> tags) {
+        if (!tags.isEmpty()) {
+            StringBuffer ids = new StringBuffer();
+            boolean flag = false;
+            for (Tag tag : tags) {
+                if (flag) {
+                    ids.append(",");
+                } else {
+                    flag = true;
+                }
+                ids.append(tag.getId());
+            }
+            return ids.toString();
+        } else {
+            return tagIds;
+        }
+    }
     @Override
     public String toString() {
         return "Daily{" +
                 "id=" + id +
+                ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", firstPicture='" + firstPicture + '\'' +
                 ", flag='" + flag + '\'' +
@@ -183,6 +235,8 @@ public class Daily {
                 ", recommend=" + recommend +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
+                ", tagIds='" + tagIds + '\'' +
+                ", description='" + description + '\'' +
                 '}';
     }
 }

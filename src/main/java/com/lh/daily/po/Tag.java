@@ -6,6 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Entity(name = "t_tag")
 public class Tag {
@@ -15,7 +16,8 @@ public class Tag {
     private Long id;
     private String name;
     @ManyToMany(mappedBy = "tags")
-    private List<Daily> daily = new ArrayList<>();
+    private List<Daily> dailys = new ArrayList<>();
+
     public Tag() {
     }
 
@@ -35,12 +37,12 @@ public class Tag {
         this.name = name;
     }
 
-    public List<Daily> getDaily() {
-        return daily;
+    public List<Daily> getDailys() {
+        return dailys;
     }
 
-    public void setDaily(List<Daily> daily) {
-        this.daily = daily;
+    public void setDailys(List<Daily> dailys) {
+        this.dailys = dailys;
     }
 
     @Override
@@ -50,4 +52,5 @@ public class Tag {
                 ", name='" + name + '\'' +
                 '}';
     }
+
 }

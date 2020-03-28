@@ -4,6 +4,8 @@ import com.lh.daily.po.Type;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 public interface TypeService {
     /**
      * 新增type
@@ -33,6 +35,13 @@ public interface TypeService {
      */
     Page<Type> listType(Pageable pageable);
 
+    /**
+     * 返回type列表
+     * @return
+     */
+    List<Type> listType();
+
+    List<Type> listTypeTop(Integer size);
     /**
      * 根据id修改type
      * @param id

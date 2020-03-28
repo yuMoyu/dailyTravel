@@ -38,31 +38,36 @@
 <div class="ui attached pointing menu">
     <div class="ui container">
         <div class="right menu">
-            <a href="#" class="item">发布</a>
-            <a href="#" class="active teal item">列表</a>
+            <a href="#" th:href="@{/admin/dailys/input}" class="item">发布</a>
+            <a href="#" th:href="@{/admin/dailys}" class="active teal item">列表</a>
         </div>
     </div>
 </div>
 <!--  中间内容-->
 <div class="m-container-small m-padded-tb-big">
     <div class="ui container">
-        <form action="#" method="post" class="ui segment form">
+        <div class="ui secondary segment form">
+            <!--点击下一页，调用js把其值赋给page;通过表单传递到后台获取数据；获取到数据后，再传递到前台进行渲染-->
+            <input type="hidden" name="page">
             <div class="inline fields">
                 <div class="field">
                     <input type="text" name="title" placeholder="标题">
                 </div>
                 <div class="field">
-                    <div class="ui selection dropdown">
-                        <input type="hidden" name="type">
-                        <i class="dropdown icon"></i>
-                        <div class="default text">分类</div>
-                        <div class="menu">
-                            <div class="item" date-value="1">错误日志</div>
-                            <div class="item" date-value="2">开发者手册</div>
-                            <div class="item" date-value="3">3</div>
-                            <div class="item" date-value="4">4</div>
-                            <div class="item" date-value="5">5</div>
+                    <div class="ui labeled action input">
+                        <div class="ui type selection dropdown">
+                            <input type="hidden" name="typeId">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">分类</div>
+                            <div class="menu">
+                                <div th:each="type : ${types}" class="item" date-value="1" th:data-value="${type.id}" th:text="${type.name}">错误日志</div>
+                                <!--/*-->
+                                <!--html原型显示，thymeleaf模板识别为注释-->
+                                <div class="item" date-value="2">开发者手册</div>
+                                <!--*/-->
+                            </div>
                         </div>
+                        <button id="clear-btn" class="ui mini basic solar-green compact button">清&nbsp;除</button>
                     </div>
                 </div>
                 <div class="field">
@@ -72,46 +77,56 @@
                     </div>
                 </div>
                 <div class="field">
-                    <button class="ui mini teal basic button"><i class="search icon"></i>搜索</button>
+                    <button type="button" id="search-btn" class="ui mini teal basic button"><i class="search icon"></i>搜索</button>
                 </div>
             </div>
-        </form>
-        <table class="ui celled table">
-            <thead>
-            <tr>
-                <th></th>
-                <th>标题</th>
-                <th>类型</th>
-                <th>推荐</th>
-                <th>更新时间</th>
-                <th>操作</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td>去哪里旅游？</td>
-                <td>认知升级</td>
-                <td>是</td>
-                <td>2017-10-02 09:45</td>
-                <td>
-                    <a href="#" class="ui mini teal basic button">编辑</a>
-                    <a href="#" class="ui mini red basic button">删除</a>
-                </td>
-            </tr>
-            </tbody>
-            <tfoot>
-            <tr>
-                <th colspan="6">
-                    <div class="ui mini pagination menu">
-                        <a class="item">上一页</a>
-                        <a class="item">下一页</a>
-                    </div>
-                    <a href="#" class="ui mini right floated teal basic button">新增</a>
-                </th>
-            </tr>
-            </tfoot>
-        </table>
+        </div>
+        <div id="table-container">
+            <table th:fragment="dailyList"  class="ui compact teal table">
+                <thead>
+                <!--page.content是daily列表-->
+                <tr>
+                    <th></th>
+                    <th width="30%">标题</th>
+                    <th>类型</th>
+                    <th>推荐</th>
+                    <th>状态</th>
+                    <th>更新时间</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="daily,iterStat : ${page.content}">
+                    <td th:text="${iterStat.count}">1</td>
+                    <td th:text="${daily.title}"> 去哪里旅游？</td>
+                    <td th:text="${daily.type.name}">认知升级</td>
+                    <td th:text="${daily.recommend} ? '是':'否' ">是</td>
+                    <td th:text="${daily.published} ? '发布':'草稿' ">草稿</td>
+                    <td th:text="${#dates.format(daily.updateTime,'yyyy-MM-dd HH:mm')}">2017-10-02 09:45</td>
+                    <td>
+                        <a href="#" th:href="@{/admin/dailys/{id}/input(id=${daily.id})}" class="ui mini teal basic button">编辑</a>
+                        <a href="#" th:href="@{/admin/dailys/{id}/delete(id=${daily.id})}" class="ui mini red basic button">删除</a>
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th colspan="7">
+                        <div class="ui mini pagination menu" th:if="${page.totalPages}>1">
+                            <a onclick="page(this)" th:attr="data-page=${page.number}-1" class="item" th:unless="${page.first}">上一页</a>
+                            <a onclick="page(this)" th:attr="data-page=${page.number}+1" class="item" th:unless="${page.last}">下一页</a>
+                        </div>
+                        <a href="#" th:href="@{/admin/dailys/input}" class="ui mini right floated teal basic button">新增</a>
+                    </th>
+                </tr>
+                </tfoot>
+            </table>
+            <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+                <i class="close icon"></i>
+                <div class="header">提示：</div>
+                <p th:text="${message}">恭喜，操作成功！</p>
+            </div>
+        </div>
     </div>
 </div>
 <!--  底部-->
@@ -165,5 +180,41 @@
     $('.ui.dropdown').dropdown({
         on: 'hover'
     });
+    //消息提示关闭初始化
+    $('.message .close')
+        .on('click', function () {
+            $(this)
+                .closest('.message')
+                .transition('fade');
+        });
+    //点击上一页、下一页将值赋值给page
+    function page(obj) {
+        $("[name='page']").val($(obj).data("page"));
+        //调用loaddata因为隐含条件查询
+        loaddata();
+    }
+    $("#search-btn").click(function () {
+        $("[name='page']").val(0);
+        loaddata();
+    });
+    //向后台发送请求
+    function loaddata() {
+        $("#table-container").load(/*[[@{/admin/dailys/search}]]*/"/admin/dailys/search", {
+           title : $("[name='title']").val(),
+            typeId : $("[name='typeId']").val(),
+           recommend : $("[name='recommend']").prop('checked'),
+            page : $("[name='page']").val()
+        });
+
+    }
+
+    //清除选中
+    $('#clear-btn')
+        .on('click', function() {
+            $('.ui.type.dropdown')
+                .dropdown('clear')
+            ;
+        })
+    ;
 </script>
 </html>
