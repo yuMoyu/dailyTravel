@@ -68,8 +68,10 @@ private String content;
 @Query("select t from t_type t") //自定义查询，根据分页获取第一页数据
 List<Type> findTop(Pageable pageable);
 ```
-<font color=blue size=5>color=gray</font>
-
+<br>
+<br>
+<br>
+<br>
 + 3/27 23:30 更新，没有看小说的日子里自律到了极致，我这算不算给自己玩了一把 9 12 7 啧啧 
 + 3/28 22:20 更新，想快点完成第一版，然后变更，可是越急越急不来 
 
