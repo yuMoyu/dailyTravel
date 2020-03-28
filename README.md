@@ -1,6 +1,6 @@
 # dailyTravel
 游记：ui：semantic，框架：springboot，数据库：mysql，动静态页面分离：thymeleaf，数据库与项目连接：jpa，开发工具：idea mysql webstorm 小程序开发工具（还未开始）
-<br>
+<br><br>
 视频地址：[SpringBoot开发一个小而美的个人博客](https://www.bilibili.com/video/av72035869)<br>
 可以学到的：<br>
 1）后端：springboot相关知识（各种注解、实体类生成表、条件查询、框架轮廓等）、idea使用及查找bug<br>
@@ -70,8 +70,6 @@ List<Type> findTop(Pageable pageable);
 ```
 <br>
 <br>
-<br>
-<br>
+
 + 3/27 23:30 更新，没有看小说的日子里自律到了极致，我这算不算给自己玩了一把 9 12 7 啧啧 
 + 3/28 22:20 更新，想快点完成第一版，然后变更，可是越急越急不来 
-
