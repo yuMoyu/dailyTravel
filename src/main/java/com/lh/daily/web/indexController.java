@@ -36,16 +36,22 @@ public class indexController {
         return "index";
     }
 
-    @PostMapping("/search")
+    @PostMapping("/search") //全局查询
     public String search(@PageableDefault(size = 5, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                          @RequestParam String query, Model model) {
         model.addAttribute("page",dailyService.listDaily("%"+query+"%", pageable));
         model.addAttribute("query",query);
         return "search";
     }
-    @GetMapping("/daily/{id}")
+    @GetMapping("/daily/{id}")  //游记详情
     public String daily(@PathVariable Long id, Model model) {
         model.addAttribute("daily",dailyService.getAndConvert(id));
         return "daily";
+    }
+
+    @GetMapping("/footer/newDaily")
+    public String newDailys(Model model) { //返回_fragments中footer下的最新游记片段
+        model.addAttribute("newDailys",dailyService.listRecommendDailyTop(3)); //将前三条推荐数据放入model
+        return "_fragments :: newDailyList";
     }
 }

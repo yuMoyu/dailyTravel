@@ -98,7 +98,7 @@
                 <tbody>
                 <tr th:each="daily,iterStat : ${page.content}">
                     <td th:text="${iterStat.count}">1</td>
-                    <td th:text="${daily.title}"> 去哪里旅游？</td>
+                    <td th:text="${#strings.abbreviate(daily.title,22)}"> 去哪里旅游？</td>
                     <td th:text="${daily.type.name}">认知升级</td>
                     <td th:text="${daily.recommend} ? '是':'否' ">是</td>
                     <td th:text="${daily.published} ? '发布':'草稿' ">草稿</td>

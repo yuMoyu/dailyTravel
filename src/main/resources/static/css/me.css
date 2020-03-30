@@ -134,8 +134,11 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
 }
 /*color*/
-.m-black{
+.m-black {
     color:#333 !important;
+}
+.m-teal {
+    color: #00B5AD !important;
 }
 /*手机端处理，媒体查询*/
 /*非手机端隐藏*/
