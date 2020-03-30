@@ -30,6 +30,9 @@
 + [idea之springboot端口被占用/跳转到login](https://blog.csdn.net/moqianmoqian/article/details/104903180)
 + Inferred type 'S' for type parameter 'S' is [not within its bound;](https://blog.csdn.net/moxiaoya1314/article/details/80037290)
 + 'Sort..has private access in .... [PageRequest... has protected access in ...](https://blog.csdn.net/huoji555/article/details/103606786)
++ [group by和order by在springboot中连用](https://blog.csdn.net/moqianmoqian/article/details/105194909)
++ [springboot国际化](https://blog.csdn.net/moqianmoqian/article/details/105197266)
++ 题目过长，截取：`<td th:text="${#strings.abbreviate(daily.title,22)}"> 去哪里旅游？</td>`
 ## 注解
 + @Service：标注业务层组件
 + @Controller：标注控制层组件
@@ -73,3 +76,8 @@ List<Type> findTop(Pageable pageable);
 
 + 3/27 23:30 更新，没有看小说的日子里自律到了极致，我这算不算给自己玩了一把 9 12 7 啧啧 
 + 3/28 22:20 更新，想快点完成第一版，然后变更，可是越急越急不来 
++ 终于写完了，开心
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200330142900937.gif)
+
++ 3/30 14:21 每次刚写完一个项目，就感觉自己的项目好厉害，用了xxx技术、框架，用了xx数据结构，引用了xx开源插件。但一段时间后，别人问你写过什么厉害的项目，左思右想，没有吧，全部浓缩为一句话：增删改查
