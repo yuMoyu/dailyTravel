@@ -33,6 +33,7 @@
 + [group by和order by在springboot中连用](https://blog.csdn.net/moqianmoqian/article/details/105194909)
 + [springboot国际化](https://blog.csdn.net/moqianmoqian/article/details/105197266)
 + 题目过长，截取：`<td th:text="${#strings.abbreviate(daily.title,22)}"> 去哪里旅游？</td>`
++ [从零开始带你部署springboot项目到服务器](https://blog.csdn.net/moqianmoqian/article/details/105204653)
 ## 注解
 + @Service：标注业务层组件
 + @Controller：标注控制层组件
