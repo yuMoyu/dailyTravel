@@ -1,5 +1,6 @@
 # dailyTravel
 游记地址：http://lanhai.ac.cn:8080/daily/
+<br>
 游记：ui：semantic，框架：springboot，数据库：mysql，动静态页面分离：thymeleaf，数据库与项目连接：jpa，开发工具：idea mysql webstorm 小程序开发工具（还未开始）
 <br><br>
 视频地址：[SpringBoot开发一个小而美的个人博客](https://www.bilibili.com/video/av72035869)<br>
